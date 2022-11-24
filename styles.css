@@ -1,0 +1,251 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+  }
+  h1.red {
+    color: #000000;
+    text-shadow: 4px 3px 4px  #f9c5b2;
+  }
+  
+  .bgimg-1,.bgimg-3 {
+    position: relative;
+    opacity: 0.9;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .bgimg-2 {
+    position: relative;
+    opacity: 0.9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .bgimg-1 {
+    background-image: url("http://res.cloudinary.com/devra29/image/upload/v1498615359/chocolate_cake4_sb3ahx.jpg");
+    min-height: 400px;
+    
+    
+  }
+  
+  .bgimg-2 {
+    opacity: 0.9;
+    background-image: url("https://res.cloudinary.com/devra29/image/upload/v1498790211/chocolate_wallpaper_hecxdz.jpg");
+    min-height: 200px;
+  }
+  
+  .bgimg-3 {
+    background-image: url("");
+    min-height: 300px;
+  }
+  
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  
+  .caption span.border {
+    background-color: #cbf6c6;
+    color: #000000;
+    padding: 18px;
+    font-size: 22px; 
+    font-weight: bold;
+  }
+  .title-font {
+    font: 24px "Lato", sans-serif;
+    color: #ddd;
+  }
+  
+  .text-sm {
+    font: 20px "Lato", sans-serif;
+    color: #ddd;
+  }
+  
+  .padding-10 {
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  /*links*/
+  a.bottom {
+      color: #FFFFFF !important;
+  }
+  
+  ul.color {
+    color: #ffffff;
+  }
+  
+  li.text {
+      color: #ffffff;
+      font-size: 1em;
+      text-align: left;
+    padding-top: 1em;
+    padding-left: .25em;
+    margin-right: 1.5em;
+  }
+  
+  .color {
+    color: #000000 !important;
+  }
+  a:hover, 
+  .a:hover {
+     text-decoration: none !important; 
+  }
+  .navbar-header {
+    padding: 10px;
+  }
+  .bg-1 {
+    background-image: url("https://res.cloudinary.com/devra29/image/upload/v1498619762/changing_brown_whtkrh.jpg");
+    min-height: 500px;
+    
+  }
+  .bg-2 {
+      /* black */
+      background-color: #2f2f2f;
+      color: #000000;
+  }
+  
+  .info {
+    color: #000000;
+    background-color: #ffdead;
+    text-align: center;
+    padding: 20px 30px;
+  }
+  
+  
+  .description {
+    font-size: 1em;
+  }
+  
+  .less {
+    background-color:transparent;
+    font-size:25px;
+    color: #f7f7f7;
+    text-shadow: 2px 2px 8px #000000;
+  }
+  
+  .icon {
+    max-height: 40px;
+    max-width: 20px;
+    margin-top: 30px;
+    margin-right: 5px;
+  }
+  
+  .icon-3 {
+    margin-right: 30px;
+  }
+  
+  
+  .my-name {
+    font-size: 1.5em;
+      color: #000000;
+    margin-left: 30px;
+    margin-top: 30px;
+    text-shadow: 0 0 0.2em #ffffff, 0 0 0.2em #ffffff,
+          0 0 0.2em #87F
+        }
+    
+  
+  
+  /*small screen*/
+  @media only screen and (max-width: 800px) and (min-width: 400px) {
+  }
+  
+  @media only screen and (max-width: 800px) and (min-width: 200px) {
+    .color {
+      color: #ffffff !important;
+    }
+    .title {
+      font-size: 2em;
+    }
+   .title-font {
+    font: 20px "Lato", sans-serif;
+    color: #ddd;
+  }
+  
+  .text-sm {
+    font: 16px, "Lato", sans-serif !important;
+    color: #ddd;
+  }
+    .icon {
+    max-height: 30px;
+    max-width: 20px;
+    margin-top: 30px;
+    margin-right: 0px;
+      
+  }
+  
+  .icon-3 {
+    margin-right: 25px;
+  }
+    .my-name {
+    font-size: 1.25em;
+    }
+    }
+  /*search code*/
+  
+      #tfnewsearch{
+          float:right;	
+      }
+      .tftextinput2{
+          margin: 0;
+          padding: 5px 15px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size:14px;
+          color:#666;
+          border:1px solid #0076a3; border-right: 20px;
+              }
+  
+      .tfbutton2 {
+          margin: 0;
+          padding: 5px 7px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size:14px;
+          font-weight:bold;
+          outline: none;
+          cursor: pointer;
+          text-align: center;
+          text-decoration: none;
+          color: #ffffff;
+          border: solid 1px #ee3f00; border-right: 10px;
+          background: #ffffff;
+          background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+          background: -moz-linear-gradient(top,  #ee3f00,  #ee0000);
+          border-top-right-radius: 5px 5px;
+          border-bottom-right-radius: 5px 5px;
+      }
+      .tfbutton2:hover {
+          text-decoration: none;
+          background: #007ead;
+          background: -webkit-gradient(linear, left top, left bottom, from(#e6ee00), to(#e6ee00));
+          background: -moz-linear-gradient(top,  #ee006b,  #ee003f);
+      }
+      /* Fixes submit button height problem in Firefox */
+      .tfbutton2::-moz-focus-inner {
+        border: 0;
+      }
+      .tfclear{
+          clear:both;
+      }
+  .inverse {
+       background-color: #3f1f09 !important;
+       border-color: #080808;
+  }
+  
+  a {
+    color: #000000 !important;
+    font-size: 1.5em;
+  }
+  
+  
+  
+  
