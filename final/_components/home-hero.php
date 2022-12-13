@@ -5,6 +5,7 @@
     </h1>
     <p class="mx-auto mt-3 max-w-md text-base text-gray-500 max-w-3xl text-xl">
       A Book of Recipes by Alex!</p>
+      <img  src=" <?php echo site_url(); ?>/dist/images/logo.png" width ="300px" height="300px" style = " " alt="#" class="" >
       <div class="searchCont">
             <form class="searchBox" action= "<?php echo site_url(); ?>/admin/search" method="GET">
                 <div>
