@@ -24,7 +24,7 @@ function add_recipe($recipe_name, $servings, $total_time, $instructions, $ingred
     global $db_connection;
     $query = 'INSERT INTO recipes';
     $query .= ' (recipe_name, servings, total_time, instructions, ingredients, description, image_path)';
-    $query .= " VALUES ('{$recipe_name}', '{$servings}', '{$total_time}', '{$instructions}', '{ $ingredients}', '{$description}', '{$image_path}',)";
+    $query .= " VALUES ('$recipe_name', '$servings', '$total_time', '$instructions', '$ingredients', '$description', '$image_path')";
     $result = mysqli_query($db_connection, $query);
     return $result;
 }

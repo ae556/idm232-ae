@@ -5,7 +5,7 @@ if (!$_POST) {
     die('Unauthorized');
 }
 
-$id=$_POST['id'];
+$id = $_POST['id'];
 $recipe_name_value =  sanitize_value($_POST['recipe_name']);
 $servings_value = sanitize_value($_POST['servings']);
 $total_time_value = sanitize_value($_POST['total_time']);
@@ -16,14 +16,14 @@ $image_path_value = sanitize_value($_POST['image_path']);
 
 
 // Create a SQL statement to insert the data into the database
-$query = "UPDATE recipe SET
+$query = "UPDATE recipes SET
      recipe_name = '{$recipe_name_value}',
      servings = '{$servings_value}', 
      total_time = '{$total_time_value}', 
      instructions = '{$instructions_value}', 
      ingredients = '{$ingredients_value}', 
-     description = '{$description_value}' 
-     image_path = '{$image_path_value }',
+     description = '{$description_value}', 
+     image_path = '{$image_path_value }'
 WHERE id = {$id}";
 
 // Run the SQL statement
