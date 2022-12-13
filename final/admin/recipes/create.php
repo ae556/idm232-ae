@@ -29,44 +29,44 @@ $result = mysqli_query($db_connection, $query);
               <!-- <br> -->
               <div class="mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label for="">recipe name</label>
-                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="recipe_title">
+                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="recipe_name">
               </div>
               <br>
               <div class=" mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label for="">servings (#)</label>
-                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="image_path">
-              </div>
-              <br>
-
-              <div class=" mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label for="">total time </label>
-                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="description">
-              </div>
-              <br>
-
-              <div class=" mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label for="">instructions</label>
                 <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="servings">
               </div>
               <br>
 
               <div class=" mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label for="">ingredients</label>
+                <label for="">total time </label>
                 <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="total_time">
               </div>
               <br>
 
               <div class=" mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label for="">description</label>
-                <textarea class="js-tinymce" name="ingredients"></textarea>
-                <!-- <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="ingredients"> -->
+                <label for="">instructions</label>
+                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="instructions">
               </div>
               <br>
 
               <div class=" mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label for="">image</label>
-                <textarea class="js-tinymce" name="instructions"></textarea>
-                <!-- <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="instructions"> -->
+                <label for="">ingredients</label>
+                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="ingredients">
+              </div>
+              <br>
+
+              <div class=" mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label for="">description</label>
+                 <textarea class="js-tinymce" name="description"></textarea> 
+                <!-- <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="description">  -->
+              </div>
+              <br>
+
+              <div class=" mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label for="">image path</label>
+                <!-- <textarea class="js-tinymce" name="image_path"></textarea> -->
+               <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="image_path"> 
               </div>
 
               <br>

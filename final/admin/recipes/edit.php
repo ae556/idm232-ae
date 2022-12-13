@@ -35,48 +35,48 @@ if ($result->num_rows > 0) {
 
               <div class="mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label for="">recipe name</label>
-                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="recipe_title" value="<?php echo $recipes['recipe_title'] ?>">
+                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="recipe_name" value="<?php echo $recipes['recipe_name'] ?>">
               </div>
               <br>
               <div class="mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label for="">servings (#)</label>
-                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="image_path" value="<?php echo $recipes['image_path'] ?>">
-              </div>
-              <br>
-
-              <div class=" mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label for="">total time</label>
-                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="description" value="<?php echo $recipes['description'] ?>">
-              </div>
-              <br>
-
-              <div class=" mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label for="">instructions</label>
                 <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="servings" value="<?php echo $recipes['servings'] ?>">
               </div>
               <br>
 
               <div class=" mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label for="">ingredients</label>
+                <label for="">total time</label>
                 <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="total_time" value="<?php echo $recipes['total_time'] ?>">
+              </div>
+              <br>
+
+              <div class=" mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label for="">instructions</label>
+                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="instructions" value="<?php echo $recipes['instructions'] ?>">
+              </div>
+              <br>
+
+              <div class=" mx-3 w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label for="">ingredients</label>
+                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="ingredients" value="<?php echo $recipes['ingredients'] ?>">
               </div>
               <br>
 
               <div class=" mx-3 md:w-1/2 px-3 mb-6 md:mb-0">
                 <label for="">description</label>
-                <textarea class="js-tinymce" name="ingredients">
-                <?php echo $recipes['ingredients']; ?>
+                <textarea class="js-tinymce" name="description">
+                <?php echo $recipes['description']; ?>
                 </textarea>
                 <!-- <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="ingredients" value="?php echo $recipes['ingredients'] ?"> -->
               </div>
               <br>
 
               <div class=" mx-3 md:w-1/2 px-3 mb-6 md:mb-0">
-                <label for="">image</label>
-                <textarea class="js-tinymce" name="instructions">
-                <?php echo $recipes['instructions']; ?>
-                </textarea>
-                <!-- <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="instructions" value="?php echo $recipes['instructions'] ?"> -->
+                <label for="">image path</label>
+                <!-- <textarea class="js-tinymce" name="image_path">
+                php echo $recipes['image_path']; ?>
+                </textarea> -->
+                <input class="mt-3 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pink-600" type="text" name="image_path" value="?php echo $recipes['image_path'] ?">
               </div>
               <br>
 
