@@ -22,7 +22,7 @@ if (!isset($recipes)) {
     <?php
     // Cant combine functions with string so we have to assign the function to a variable here.
     $site_url = site_url();
-while ($recipe = mysqli_fetch_array($result)) {
+while ($recipes = mysqli_fetch_array($result)) {
     echo "
           <tr>
             <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipes['recipe_name']} </td>

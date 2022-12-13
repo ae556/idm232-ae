@@ -1,22 +1,24 @@
 <?php
-if (!isset($result)) {
-    echo '$recipes variable is not defined. Please check the code.';
+if (!isset($recipes)) {
+  // echo '$recipes variable is not defined. Please check the code.';
 }
 ?>
 
-<?php
-$site_url = site_url();
+  <tbody class="divide-y divide-gray-200 bg-white">
+    <?php
+    // Cant combine functions with string so we have to assign the function to a variable here.
+    $site_url = site_url();
 while ($recipes = mysqli_fetch_array($result)) {
     echo "
-        <a href='{$site_url}/recipeDetail.php?id={$recipes['id']}' class=''>
-            <div class=''>
-            <img class='' width='100px' height='100px' src='{$recipes['image_path']}' alt=''>
-                <div class=''>
-                    <p class=''>{$recipes['recipe_title']}</p>
-                    <p class=''>{$recipes['description']}</p>
-                </div> 
-            </div>
-        </a>
-        ";
+          <tr>
+            <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipes['image_path']}</td>
+            <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipes['recipe_name']} </td>
+            <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipes['total_time']}</td>
+            <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipes['description']}</td>
+            <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>
+                  <a href='{$site_url}/recipeDetail.php?id={$recipes['id']}' class='text-indigo-600 hover:text-indigo-900'>View Recipe</a>
+                </td>
+          </tr>";
 }
 ?>
+  
