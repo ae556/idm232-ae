@@ -8,7 +8,7 @@ include_once __DIR__ . '/_components/header.php';
 <?php
 // get data from database
 
-$query = 'SELECT * FROM recipe ORDER BY recipe_name ASC';
+$query = 'SELECT * FROM recipes ORDER BY recipe_name ASC';
 $result = mysqli_query($db_connection, $query);
 
 ?>
@@ -22,13 +22,35 @@ $result = mysqli_query($db_connection, $query);
     </div>    
 </div>
 
-<div class="">  
-    <div class="">
-        <?php include __DIR__ . '/_components/recipeCards.php'; ?>
-    </div>
-</div>
+    
+    <div class="mt-8 flex flex-col">
+      <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+        <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+          <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+          <table class="min-w-full divide-y divide-gray-300">
+                <thead class="bg-gray-50">
+                    <tr>
+                    <!-- <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">#</th> -->
+                    <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 ">image</th>
+                    <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 ">recipe title</th>
+                    <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 ">total time</th>
+                    <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">description</th> 
+                    <!-- <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">ingredients</th>
+                    <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">instructions</th> --> 
 
-<?php
+                    <!-- <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-6">
+                        <span class="sr-only">a</span>
+                    </th> -->
+                    </tr>
+                </thead>
+            <?php include __DIR__ . '/_components/recipeCards.php'; ?>
+            </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- php
 
 $recipes = array(
   "Tuscan Chicken & Green Lentil Stew",
@@ -111,7 +133,7 @@ $recipes = array(
   with Kale Rice & Roasted Carrots",
 );
 
-shuffle($recipes);
+
 
 echo "<table style='margin-left: 30px;'>\n";
 echo "<tr><th>Recipe</th></tr>\n";
@@ -120,7 +142,7 @@ for ($i = 0; $i < 40; $i++) {
 }
 echo "</table>\n";
 
-?>
+?> -->
 
 <?php include_once __DIR__ . '/_components/footer.php';
 
